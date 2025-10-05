@@ -20,6 +20,7 @@ export default function About() {
         { name: "React", category: "Frontend" },
         { name: "Tailwind CSS", category: "Styling" },
         { name: "Flask", category: "Backend" },
+        { name: "SQLite", category: "Database" },
     ];
 
     return (
@@ -72,7 +73,7 @@ export default function About() {
                     <h2 className="text-3xl font-bold mb-6 text-center bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400 bg-clip-text text-transparent">
                         Built With
                     </h2>
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                         {techStack.map((tech, index) => (
                             <div key={index} className="bg-gray-100 dark:bg-gray-700/50 rounded-lg p-4 text-center hover:shadow-lg transition-shadow">
                                 <p className="font-semibold text-gray-900 dark:text-white">{tech.name}</p>
