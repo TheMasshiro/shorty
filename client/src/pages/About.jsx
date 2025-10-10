@@ -35,10 +35,10 @@ export default function About() {
                         <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl mb-4 shadow-lg">
                             <Icon name="link" className="w-8 h-8 text-white" />
                         </div>
-                        <h1 className="text-5xl font-bold mb-3 bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400 bg-clip-text text-transparent">
+                        <h1 className="text-4xl sm:text-5xl font-bold mb-3 bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400 bg-clip-text text-transparent">
                             About Shorty
                         </h1>
-                        <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                        <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
                             A modern URL shortener built with React and modern web technologies.
                             Created as a final project for Harvard's CS50x course.
                         </p>
@@ -70,7 +70,7 @@ export default function About() {
 
                 {/* Tech Stack */}
                 <Card className="relative overflow-hidden">
-                    <h2 className="text-3xl font-bold mb-6 text-center bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400 bg-clip-text text-transparent">
+                    <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400 bg-clip-text text-transparent">
                         Built With
                     </h2>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -93,12 +93,12 @@ export default function About() {
                         Introduction to Computer Science course. It demonstrates web development skills,
                         including React, modern UI/UX design, and full-stack development.
                     </p>
-                    <div className="flex justify-center space-x-4">
+                    <div className="flex flex-col sm:flex-row justify-center gap-4">
                         <a
                             href="https://github.com/themasshiro/shorty"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+                            className="inline-flex items-center justify-center space-x-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
                         >
                             <Icon name="github" className="w-5 h-5" />
                             <span>View on GitHub</span>
@@ -107,7 +107,7 @@ export default function About() {
                             href="https://www.edx.org/learn/computer-science/harvard-university-cs50-s-introduction-to-computer-science"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center space-x-2 px-6 py-3 bg-gray-600 hover:bg-gray-700 text-white font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+                            className="inline-flex items-center justify-center space-x-2 px-6 py-3 bg-gray-600 hover:bg-gray-700 text-white font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
                         >
                             <Icon name="edx" className="w-5 h-5" />
                             <span>About CS50x</span>
