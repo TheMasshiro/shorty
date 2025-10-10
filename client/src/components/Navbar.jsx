@@ -64,7 +64,7 @@ export default function Navbar() {
                             </div>
                         </div>
                     </div>
-                    <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                    <div className="absolute inset-y-0 right-0 hidden sm:flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                         <NavButton
                             onClick={() => openLink("https://github.com/themasshiro/shorty")}>
                             <span className="absolute -inset-1.5" />
@@ -101,6 +101,22 @@ export default function Navbar() {
                             </DisclosureButton>
                         );
                     })}
+                    <div className="border-t border-white/10 mt-3 pt-3 flex items-center justify-start gap-2">
+                        <button
+                            onClick={() => openLink("https://github.com/themasshiro/shorty")}
+                            className="flex items-center space-x-2 text-gray-300 hover:text-white hover:bg-white/5 rounded-md px-3 py-2 text-base font-medium transition-colors"
+                        >
+                            <Icon name="github" className="size-5" />
+                            <span>GitHub</span>
+                        </button>
+                        <button
+                            onClick={() => openLink("https://www.edx.org/learn/computer-science/harvard-university-cs50-s-introduction-to-computer-science")}
+                            className="flex items-center space-x-2 text-gray-300 hover:text-white hover:bg-white/5 rounded-md px-3 py-2 text-base font-medium transition-colors"
+                        >
+                            <Icon name="edx" className="size-5" />
+                            <span>CS50x</span>
+                        </button>
+                    </div>
                 </div>
             </DisclosurePanel>
         </Disclosure >
