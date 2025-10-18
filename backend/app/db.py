@@ -3,7 +3,7 @@ import sqlite3
 
 from flask import g
 
-from main import app
+from index import app
 
 DATABASE = os.path.join(os.getcwd(), "database.db")
 
