@@ -4,7 +4,7 @@ import uuid
 from flask import session
 from flask_cors import cross_origin
 
-from app import app
+from main import app
 
 
 @app.route("/", methods=["GET"])

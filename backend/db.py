@@ -3,10 +3,9 @@ import sqlite3
 
 from flask import g
 
-from app import app
+from main import app
 
-app_dir = os.path.join(os.getcwd(), "app")
-DATABASE = os.path.join(app_dir, "database.db")
+DATABASE = os.path.join(os.getcwd(), "database.db")
 
 
 def get_db():
@@ -26,6 +25,6 @@ def close_connection(_):
 if not os.path.exists(DATABASE):
     with app.app_context():
         db = get_db()
-        with app.open_resource(os.path.join(app_dir, "schema.sql"), mode="r") as f:
+        with app.open_resource(os.path.join("schema.sql"), mode="r") as f:
             db.cursor().executescript(f.read())
         db.commit()
